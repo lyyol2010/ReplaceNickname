@@ -42,6 +42,7 @@ export default {
       var temp = this.input_string;
       for (var i = 0; i < this.length; i++) {
         temp = temp.replace(this.list[i].name, this.list[i].nickname);
+        temp = temp.replace("、", " ");
       }
       temp = temp.replace("、", " ");
       if (temp[temp.length - 1] != " ") {
